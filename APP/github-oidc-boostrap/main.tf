@@ -34,7 +34,7 @@ resource "aws_iam_role_policy_attachment" "oidc_policies" {
     "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess",
     "arn:aws:iam::aws:policy/CloudWatchLogsFullAccess",
     "arn:aws:iam::aws:policy/AmazonECS_FullAccess",
-    "arn:aws:iam::aws:policy/RDSFullAccess",
+    "arn:aws:iam::aws:policy/AmazonRDSFullAccess",
   ])
 
   role       = aws_iam_role.github_oidc.name
